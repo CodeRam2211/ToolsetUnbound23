@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .content {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+body .content .info {
+  color: white;
+  background-color: black;
+  width: 70%;
+  height: 100vh;
+}
+body .content .login {
+  width: 30%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .content .login .login-box {
+  border-radius: 5px;
+  height: 98vh;
+  width: 95%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .content .login .login-box h1 {
+  top: 0%;
+  padding: 20px;
+}
+body .content .login .login-box .login-form {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+}
+body .content .login .login-box .login-form .formitem {
+  margin: 2px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 30px;
+}
+body .content .login .login-box .login-form .lbtns {
+  display: flex;
+  width: 100%;
+}
+body .content .login .login-box .login-form .lbtns .log-btn {
+  margin-right: 0;
+  width: 100%;
+}
+body .content .hidden {
+  display: none;
+}/*# sourceMappingURL=homepage.css.map */

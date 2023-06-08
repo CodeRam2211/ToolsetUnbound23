@@ -1,0 +1,22 @@
+body .navbar {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .navbar .logo {
+    font-size: 2rem;
+    align-self: center;
+    margin: 2vh 25px;
+  }
+  body .navbar .sign-out {
+    margin: 2vh 25px;
+    font-size: 1.5rem;
+  }
+  body .navbar .tabs {
+    display: flex;
+  }
+  body .navbar .tabs .nav-btn {
+    font-size: 1.5rem;
+    align-self: center;
+    margin: 2vh 25px;
+  }
