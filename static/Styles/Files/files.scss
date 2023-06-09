@@ -28,6 +28,7 @@ body{
                 border-bottom: 2px solid;
             }
             .t-names{
+
                 font-size: 1.2rem;
                 .f-type{
                     padding: 10px;
@@ -37,31 +38,71 @@ body{
                     cursor: pointer;
                     background-color: rgb(187, 187, 187)
                 }
+                .active{
+                    background-color: rgb(45, 45, 45);
+                    color: white;
+                }
+                .active:hover{
+                    background-color: rgb(45, 45, 45);
+                }
             }
         }
         .r-panel{
             width: 80vw;
             .f-list{
+
+                padding: 10px;
+                font-size: 1.3rem;
+                border-collapse: collapse;
+
                 width: 100%;
                 padding: 10px;
+                th{
+                    height: 50px;
+                    background-color: aqua;
+                }
+                td{
+                    text-align: center;
+                }
+                tr{
+                  .link{
+                    
+                    a{
+                        font-size: 1rem;
+                        padding: 0 20px;
+                        border: 1px solid aquamarine;
+                        border-radius: 5px;
+                        width: 100%;
+                        margin: 10px;
+                        text-decoration: none;
+                        color: black;
+                        background-color: aquamarine;
+                    }
+                    a:hover{
+                        color: aquamarine;
+                        background-color: black;
+                    }
+                  }  
+                }
+                .fame{
+                    
+                    padding: 0 20px;
+                    text-align: left;
+                }
                 colgroup{
                     .srno{
-                        text-align: center;
                         width: 10%;
                     }
                     .filename{
                         width: 40%;
                     }
                     .size{
-                        text-align: center;
                         width: 15%;
                     }
                     .ratio{
-                        text-align: center;
                         width: 15%;
                     }
                     .dl{
-                        text-align: center;
                         width: 20%;
                     }
                 }

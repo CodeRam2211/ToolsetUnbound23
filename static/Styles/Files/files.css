@@ -41,29 +41,61 @@ body .main-body .l-panel .t-names .f-type:hover {
   cursor: pointer;
   background-color: rgb(187, 187, 187);
 }
+body .main-body .l-panel .t-names .active {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+body .main-body .l-panel .t-names .active:hover {
+  background-color: rgb(45, 45, 45);
+}
 body .main-body .r-panel {
   width: 80vw;
 }
 body .main-body .r-panel .f-list {
+  padding: 10px;
+  font-size: 1.3rem;
+  border-collapse: collapse;
   width: 100%;
   padding: 10px;
 }
-body .main-body .r-panel .f-list colgroup .srno {
+body .main-body .r-panel .f-list th {
+  height: 50px;
+  background-color: aqua;
+}
+body .main-body .r-panel .f-list td {
   text-align: center;
+}
+body .main-body .r-panel .f-list tr .link a {
+  font-size: 1rem;
+  padding: 0 20px;
+  border: 1px solid aquamarine;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: aquamarine;
+}
+body .main-body .r-panel .f-list tr .link a:hover {
+  color: aquamarine;
+  background-color: black;
+}
+body .main-body .r-panel .f-list .fame {
+  padding: 0 20px;
+  text-align: left;
+}
+body .main-body .r-panel .f-list colgroup .srno {
   width: 10%;
 }
 body .main-body .r-panel .f-list colgroup .filename {
   width: 40%;
 }
 body .main-body .r-panel .f-list colgroup .size {
-  text-align: center;
   width: 15%;
 }
 body .main-body .r-panel .f-list colgroup .ratio {
-  text-align: center;
   width: 15%;
 }
 body .main-body .r-panel .f-list colgroup .dl {
-  text-align: center;
   width: 20%;
 }/*# sourceMappingURL=files.css.map */

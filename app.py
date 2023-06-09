@@ -40,6 +40,11 @@ def index():
 def dashboard() :
     return render_template('dashboard.html')
 
+@app.route('/files')
+@login_required
+def files():
+    return render_template('files.html')
+
 @app.route('/login',methods = ['POST'])
 def login():
     form = {'username': request.form.get('username'),'password':request.form.get('password')}
