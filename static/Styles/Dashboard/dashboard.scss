@@ -19,6 +19,17 @@ body{
             span{
                 color: brown;
             }
+            transition: 70ms ease-in-out;
+
+        }
+        .welcome:hover{
+            margin: 20px;
+            font-size: 2rem;
+            color: brown;
+            span{
+                color: black;
+            }
+            transition: 70ms ease-in-out;
         }
         .conv-options{
             display: flex;
@@ -27,10 +38,17 @@ body{
                 border-radius: 15px;
                 color: white;
                 background-color: black;
+                border: 1px solid black;
                 font-size: 2rem;
                 padding: 20px;
                 margin: 20px;
-
+            }
+            .c-btn:hover{
+                cursor: pointer;
+                border: 1px solid black;
+                color: black;
+                background-color: white;
+                transition: 100ms;
             }
         }
     }

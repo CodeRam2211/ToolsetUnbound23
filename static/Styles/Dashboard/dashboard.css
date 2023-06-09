@@ -17,9 +17,19 @@ body .main-body {
 body .main-body .welcome {
   margin: 20px;
   font-size: 2rem;
+  transition: 70ms ease-in-out;
 }
 body .main-body .welcome span {
   color: brown;
+}
+body .main-body .welcome:hover {
+  margin: 20px;
+  font-size: 2rem;
+  color: brown;
+  transition: 70ms ease-in-out;
+}
+body .main-body .welcome:hover span {
+  color: black;
 }
 body .main-body .conv-options {
   display: flex;
@@ -29,7 +39,15 @@ body .main-body .conv-options .c-btn {
   border-radius: 15px;
   color: white;
   background-color: black;
+  border: 1px solid black;
   font-size: 2rem;
   padding: 20px;
   margin: 20px;
+}
+body .main-body .conv-options .c-btn:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  transition: 100ms;
 }/*# sourceMappingURL=dashboard.css.map */

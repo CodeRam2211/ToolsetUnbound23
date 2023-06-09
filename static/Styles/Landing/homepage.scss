@@ -61,6 +61,17 @@ body{
                         .log-btn{
                             margin-right: 0;
                             width: 100%;
+                            transition: 70ms ease-in-out;
+                            height: 100%;
+                        }
+                        .log-btn:hover{
+                            height: 100%;
+                            background-color: black;
+                            color: white;
+                            cursor: pointer;
+                            margin-right: 0;
+                            width: 100%;
+                            transition: 70ms ease-in-out;
                         }
                     }
 

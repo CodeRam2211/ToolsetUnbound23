@@ -66,6 +66,17 @@ body .content .login .login-box .login-form .lbtns {
 body .content .login .login-box .login-form .lbtns .log-btn {
   margin-right: 0;
   width: 100%;
+  transition: 70ms ease-in-out;
+  height: 100%;
+}
+body .content .login .login-box .login-form .lbtns .log-btn:hover {
+  height: 100%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-right: 0;
+  width: 100%;
+  transition: 70ms ease-in-out;
 }
 body .content .hidden {
   display: none;

@@ -8,15 +8,41 @@ body .navbar {
     align-self: center;
     margin: 2vh 25px;
   }
+  body .navbar .logo:hover {
+    cursor: pointer;
+  }
   body .navbar .sign-out {
+    margin: 2vh 25px;
+    font-size: 1.5rem;
+  }
+  body .navbar .sign-out:hover {
+    cursor: pointer;
     margin: 2vh 25px;
     font-size: 1.5rem;
   }
   body .navbar .tabs {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   body .navbar .tabs .nav-btn {
     font-size: 1.5rem;
-    align-self: center;
-    margin: 2vh 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 25px;
+    transition: 70ms ease-in-out;
+  }
+  body .navbar .tabs .nav-btn:hover {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(95, 210, 171);
+    padding: 0 25px;
+    height: 100%;
+    transition: 70ms ease-in-out;
+
   }
