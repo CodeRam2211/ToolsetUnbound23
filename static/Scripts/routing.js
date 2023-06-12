@@ -5,7 +5,7 @@
 if(location.href == "http://127.0.0.1:5000/"){
     const login = document.querySelector(".in-btn")
     login.addEventListener("click", ()=>{
-        location.href("/login");
+        location.replace("/login")
     })
 }
 

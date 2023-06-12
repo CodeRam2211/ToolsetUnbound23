@@ -35,6 +35,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/compress')
+@login_required
+def compress():
+    return render_template('text.html')
+
 @app.route('/dashboard')
 @login_required
 def dashboard() :
