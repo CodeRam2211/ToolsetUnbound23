@@ -173,4 +173,7 @@ class HuffmanCoding:
 		print("Decompressed")
 		return output_path
 	
-a = input("enter file location :")
+filepath = input("enter file location :")
+myfileobj = HuffmanCoding(filepath)
+
+myfileobj.compress()
