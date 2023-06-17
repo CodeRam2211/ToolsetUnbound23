@@ -1,23 +1,28 @@
+
+
 body .navbar {
-    background-color: aquamarine;
+    color:white ;
+    background-color: transparent;
+    /* background: rgb(85,34,87);
+background: linear-gradient(133deg, rgba(85,34,87,1) 0%, rgba(153,46,158,1) 54%, rgba(85,34,87,1) 100%); */
     display: flex;
     justify-content: space-between;
   }
   body .navbar .logo {
     font-size: 2rem;
     align-self: center;
-    margin: 2vh 25px;
+    margin: 1vh 25px;
   }
   body .navbar .logo:hover {
     cursor: pointer;
   }
   body .navbar .sign-out {
-    margin: 2vh 25px;
+    margin: 1vh 25px;
     font-size: 1.5rem;
   }
   body .navbar .sign-out:hover {
     cursor: pointer;
-    margin: 2vh 25px;
+    margin: 1vh 25px;
     font-size: 1.5rem;
   }
   body .navbar .tabs {
@@ -40,7 +45,7 @@ body .navbar {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: rgb(95, 210, 171);
+    background-color: #552257;
     padding: 0 25px;
     height: 100%;
     transition: 70ms ease-in-out;

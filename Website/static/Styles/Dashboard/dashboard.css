@@ -6,6 +6,8 @@
 }
 
 body {
+  background: rgb(160, 252, 98);
+  background: linear-gradient(133deg, rgb(160, 252, 98) 0%, rgb(153, 240, 94) 30%, rgb(85, 34, 87) 100%);
   display: flex;
   flex-direction: column;
 }
@@ -20,12 +22,12 @@ body .main-body .welcome {
   transition: 70ms ease-in-out;
 }
 body .main-body .welcome span {
-  color: brown;
+  color: #552257;
 }
 body .main-body .welcome:hover {
   margin: 20px;
   font-size: 2rem;
-  color: brown;
+  color: #552257;
   transition: 70ms ease-in-out;
 }
 body .main-body .welcome:hover span {
@@ -38,16 +40,16 @@ body .main-body .conv-options {
 body .main-body .conv-options .c-btn {
   border-radius: 15px;
   color: white;
-  background-color: black;
-  border: 1px solid black;
+  background-color: #9E1FA3;
+  border: 1px solid #9E1FA3;
   font-size: 2rem;
   padding: 20px;
   margin: 20px;
 }
 body .main-body .conv-options .c-btn:hover {
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #9E1FA3;
   color: black;
-  background-color: white;
+  background-color: transparent;
   transition: 100ms;
 }/*# sourceMappingURL=dashboard.css.map */

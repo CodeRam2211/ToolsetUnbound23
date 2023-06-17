@@ -5,7 +5,7 @@
     list-style: none;
 }
 
-body{
+body{   
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -28,7 +28,6 @@ body{
                 border-bottom: 2px solid;
             }
             .t-names{
-
                 font-size: 1.2rem;
                 .f-type{
                     padding: 10px;
@@ -36,14 +35,16 @@ body{
                 }
                 .f-type:hover{
                     cursor: pointer;
-                    background-color: rgb(187, 187, 187)
+                    background-color: #f878ff98;
+                    color: whitex;
+                    
                 }
                 .active{
-                    background-color: rgb(45, 45, 45);
+                    background-color: #6F2173;
                     color: white;
                 }
                 .active:hover{
-                    background-color: rgb(45, 45, 45);
+                    background-color:#6F2173;
                 }
             }
         }
@@ -58,8 +59,9 @@ body{
                 width: 100%;
                 padding: 10px;
                 th{
+                    color: black;
                     height: 50px;
-                    background-color: aqua;
+                    background-color: #EA5DF0;
                 }
                 td{
                     text-align: center;
@@ -70,22 +72,21 @@ body{
                     a{
                         font-size: 1rem;
                         padding: 0 20px;
-                        border: 1px solid aquamarine;
+                        border: 1px solid #EA5DF0;
                         border-radius: 5px;
                         width: 100%;
                         margin: 10px;
                         text-decoration: none;
                         color: black;
-                        background-color: aquamarine;
+                        background-color: #EA5DF0;
                     }
                     a:hover{
-                        color: aquamarine;
+                        color: #EA5DF0;
                         background-color: black;
                     }
                   }  
                 }
-                .fame{
-                    
+                .fame{    
                     padding: 0 20px;
                     text-align: left;
                 }

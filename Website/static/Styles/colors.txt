@@ -1,0 +1,6 @@
+Primary 1: #99F05E
+Primary 2: #B1FF7D
+Primary 3: #5EA32F
+S1: #EA5DF0
+S2: #9E1FA3
+S3:  #AC45B0

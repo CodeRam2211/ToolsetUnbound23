@@ -39,14 +39,15 @@ body .main-body .l-panel .t-names .f-type {
 }
 body .main-body .l-panel .t-names .f-type:hover {
   cursor: pointer;
-  background-color: rgb(187, 187, 187);
+  background-color: rgba(248, 120, 255, 0.5960784314);
+  color: whitex;
 }
 body .main-body .l-panel .t-names .active {
-  background-color: rgb(45, 45, 45);
+  background-color: #6F2173;
   color: white;
 }
 body .main-body .l-panel .t-names .active:hover {
-  background-color: rgb(45, 45, 45);
+  background-color: #6F2173;
 }
 body .main-body .r-panel {
   width: 80vw;
@@ -59,8 +60,9 @@ body .main-body .r-panel .f-list {
   padding: 10px;
 }
 body .main-body .r-panel .f-list th {
+  color: black;
   height: 50px;
-  background-color: aqua;
+  background-color: #EA5DF0;
 }
 body .main-body .r-panel .f-list td {
   text-align: center;
@@ -68,16 +70,16 @@ body .main-body .r-panel .f-list td {
 body .main-body .r-panel .f-list tr .link a {
   font-size: 1rem;
   padding: 0 20px;
-  border: 1px solid aquamarine;
+  border: 1px solid #EA5DF0;
   border-radius: 5px;
   width: 100%;
   margin: 10px;
   text-decoration: none;
   color: black;
-  background-color: aquamarine;
+  background-color: #EA5DF0;
 }
 body .main-body .r-panel .f-list tr .link a:hover {
-  color: aquamarine;
+  color: #EA5DF0;
   background-color: black;
 }
 body .main-body .r-panel .f-list .fame {

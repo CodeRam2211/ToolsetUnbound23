@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: black;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(133deg, rgb(0, 0, 0) 0%, rgb(248, 34, 32) 59%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,11 +21,11 @@ body .content {
 }
 body .content .info {
   color: white;
-  background-color: black;
   width: 70%;
   height: 100vh;
 }
 body .content .login {
+  flex-grow: 1;
   width: 30%;
   height: 100vh;
   background-color: transparent;
@@ -37,15 +38,16 @@ body .content .login .login-box {
   border-radius: 5px;
   height: 98vh;
   width: 95%;
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 body .content .login .login-box h1 {
+  text-decoration: underline;
   top: 0%;
   padding: 20px;
+  margin-bottom: 30px;
 }
 body .content .login .login-box .login-form {
   display: flex;
@@ -54,6 +56,7 @@ body .content .login .login-box .login-form {
   justify-content: center;
 }
 body .content .login .login-box .login-form .formitem {
+  border: none;
   margin: 2px;
   padding: 20px;
   width: 100%;
@@ -64,6 +67,7 @@ body .content .login .login-box .login-form .lbtns {
   width: 100%;
 }
 body .content .login .login-box .login-form .lbtns .log-btn {
+  border: none;
   margin-right: 0;
   width: 100%;
   transition: 70ms ease-in-out;
@@ -71,8 +75,6 @@ body .content .login .login-box .login-form .lbtns .log-btn {
 }
 body .content .login .login-box .login-form .lbtns .log-btn:hover {
   height: 100%;
-  background-color: black;
-  color: white;
   cursor: pointer;
   margin-right: 0;
   width: 100%;
