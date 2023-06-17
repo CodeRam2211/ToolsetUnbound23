@@ -15,8 +15,6 @@ class User(UserMixin):
         return 1
     def check_password(self,password):
         return check_password_hash(self.password_hash,password)
-    def __repr__(self):
-        return '<User %r>' % self.username
 
 
 user = User({'id':1,'username':'user','password':'password'})
@@ -28,6 +26,7 @@ login_manager.init_app(app)
 
 @login_manager.user_loader
 def load_user(user_id):
+    #if id not in users
     return user
 
 @app.route('/')#home page containing login option
