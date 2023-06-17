@@ -6,8 +6,8 @@
 }
 
 body {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(133deg, rgb(0, 0, 0) 0%, rgb(248, 34, 32) 59%);
+  background: rgb(163, 63, 13);
+  background: linear-gradient(135deg, rgb(163, 63, 13) 40%, #0BB3A7 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,19 +35,21 @@ body .content .login {
   align-items: center;
 }
 body .content .login .login-box {
-  border-radius: 5px;
-  height: 98vh;
-  width: 95%;
+  background-color: rgba(0, 0, 0, 0.392);
+  border: none;
+  height: 60vh;
+  width: 90%;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 body .content .login .login-box h1 {
-  text-decoration: underline;
+  margin-bottom: 30px;
+  color: white;
   top: 0%;
   padding: 20px;
-  margin-bottom: 30px;
 }
 body .content .login .login-box .login-form {
   display: flex;
@@ -56,28 +58,31 @@ body .content .login .login-box .login-form {
   justify-content: center;
 }
 body .content .login .login-box .login-form .formitem {
-  border: none;
+  font-size: 1.2rem;
   margin: 2px;
   padding: 20px;
   width: 100%;
-  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  border: none;
 }
 body .content .login .login-box .login-form .lbtns {
   display: flex;
   width: 100%;
+  border: none;
 }
 body .content .login .login-box .login-form .lbtns .log-btn {
-  border: none;
+  font-size: 1.5rem;
+  height: 100%;
   margin-right: 0;
   width: 100%;
   transition: 70ms ease-in-out;
   height: 100%;
 }
 body .content .login .login-box .login-form .lbtns .log-btn:hover {
-  height: 100%;
   cursor: pointer;
-  margin-right: 0;
-  width: 100%;
+  background-color: black;
+  color: white;
   transition: 70ms ease-in-out;
 }
 body .content .hidden {

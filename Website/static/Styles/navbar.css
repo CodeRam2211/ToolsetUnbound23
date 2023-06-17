@@ -2,7 +2,7 @@
 
 body .navbar {
     color:white ;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.286);
     /* background: rgb(85,34,87);
 background: linear-gradient(133deg, rgba(85,34,87,1) 0%, rgba(153,46,158,1) 54%, rgba(85,34,87,1) 100%); */
     display: flex;
@@ -45,7 +45,7 @@ background: linear-gradient(133deg, rgba(85,34,87,1) 0%, rgba(153,46,158,1) 54%,
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: #552257;
+    background-color: rgba(0, 0, 0, 0.286);
     padding: 0 25px;
     height: 100%;
     transition: 70ms ease-in-out;

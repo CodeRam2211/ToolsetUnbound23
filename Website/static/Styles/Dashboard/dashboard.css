@@ -6,12 +6,15 @@
 }
 
 body {
-  background: rgb(160, 252, 98);
-  background: linear-gradient(133deg, rgb(160, 252, 98) 0%, rgb(153, 240, 94) 30%, rgb(85, 34, 87) 100%);
+  color: #26F0E2;
+  height: 100vh;
+  background: rgb(163, 63, 13);
+  background: linear-gradient(135deg, rgb(163, 63, 13) 40%, #0BB3A7 100%);
   display: flex;
   flex-direction: column;
 }
 body .main-body {
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,15 +22,16 @@ body .main-body {
 body .main-body .welcome {
   margin: 20px;
   font-size: 2rem;
+  color: black;
   transition: 70ms ease-in-out;
 }
 body .main-body .welcome span {
-  color: #552257;
+  color: #26F0E2;
 }
 body .main-body .welcome:hover {
   margin: 20px;
   font-size: 2rem;
-  color: #552257;
+  color: #26F0E2;
   transition: 70ms ease-in-out;
 }
 body .main-body .welcome:hover span {
@@ -38,18 +42,16 @@ body .main-body .conv-options {
   margin: 20px;
 }
 body .main-body .conv-options .c-btn {
-  border-radius: 15px;
   color: white;
-  background-color: #9E1FA3;
-  border: 1px solid #9E1FA3;
+  background-color: rgba(0, 0, 0, 0.383);
+  border: 1px solid rgba(0, 0, 0, 0.352);
   font-size: 2rem;
   padding: 20px;
   margin: 20px;
 }
 body .main-body .conv-options .c-btn:hover {
   cursor: pointer;
-  border: 1px solid #9E1FA3;
-  color: black;
-  background-color: transparent;
+  background-color: black;
+  color: white;
   transition: 100ms;
 }/*# sourceMappingURL=dashboard.css.map */

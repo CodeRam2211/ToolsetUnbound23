@@ -7,19 +7,24 @@
 }
 
 body{
-    background: rgb(160,252,98);
-    background: linear-gradient(133deg, rgba(160,252,98,1) 0%, rgba(153,240,94,1) 30%, rgba(85,34,87,1) 100%);
+    color:#26F0E2;
+    height: 100vh;
+    background: rgb(163,63,13);
+    background: linear-gradient(135deg, rgba(163,63,13,1) 40%, #0BB3A7 100%);
     display: flex;
     flex-direction: column;
     .main-body{
+        height: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
         .welcome{
             margin: 20px;
             font-size: 2rem;
+            color: black;
             span{
-                color:#552257;
+                color:#26F0E2;
+
             }
             transition: 70ms ease-in-out;
 
@@ -27,7 +32,7 @@ body{
         .welcome:hover{
             margin: 20px;
             font-size: 2rem;
-            color:#552257;
+            color:#26F0E2;
             span{
                 color: black;
             }
@@ -37,19 +42,17 @@ body{
             display: flex;
             margin: 20px;
             .c-btn{
-                border-radius: 15px;
                 color: white;
-                background-color:#9E1FA3;
-                border: 1px solid #9E1FA3;
+                background-color:rgba(0, 0, 0, 0.383);
+                border: 1px solid rgba(0, 0, 0, 0.352);
                 font-size: 2rem;
                 padding: 20px;
                 margin: 20px;
             }
             .c-btn:hover{
                 cursor: pointer;
-                border: 1px solid #9E1FA3;
-                color: black;
-                background-color: transparent;
+                background-color: black;
+                color: white;
                 transition: 100ms;
             }
         }
