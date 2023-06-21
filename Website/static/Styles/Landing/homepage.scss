@@ -6,8 +6,8 @@
 }
 
 body{
-    background: rgb(0,0,0);
-    background: linear-gradient(133deg, rgba(0,0,0,1) 0%, rgba(248,34,32,1) 59%);
+    background: rgb(163,63,13);
+    background: linear-gradient(135deg, rgba(163,63,13,1) 40%, #0BB3A7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,19 +32,21 @@ body{
             justify-content: center;
             align-items: center;
             .login-box{
-                border-radius: 5px;
-                height: 98vh;
-                width: 95%;
+                background-color: rgba(0, 0, 0, 0.392);
+                border: none;
+                height: 60vh;
+                width: 90%;
+                margin-left: 20px;
                 // background-color:#99F05E ;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 h1{
-                    text-decoration: underline;
+                    margin-bottom: 30px;
+                    color: white;
                     top: 0%;
                     padding: 20px;
-                    margin-bottom: 30px;
                 }
                 .login-form{
                     display: flex;
@@ -52,29 +54,30 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     .formitem{
-                        border: none;
+                        font-size: 1.2rem;
                         margin: 2px;
                         padding: 20px;
                         width: 100%;
-                        border-radius: 30px;
+                        color: white;
+                        background-color: transparent;
+                        border: none;
                     }
                     .lbtns{
                         display: flex;
                         width: 100%;
-
+                        border: none;
                         .log-btn{
-                            border: none;
+                            font-size: 1.5rem;
+                            height: 100%;
                             margin-right: 0;
                             width: 100%;
                             transition: 70ms ease-in-out;
                             height: 100%;
                         }
                         .log-btn:hover{
-                            height: 100%;
-                            // background-color: #AC45B0;
                             cursor: pointer;
-                            margin-right: 0;
-                            width: 100%;
+                            background-color: black;
+                            color: white;
                             transition: 70ms ease-in-out;
                         }
                     }
