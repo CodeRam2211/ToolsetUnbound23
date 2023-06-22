@@ -5,20 +5,20 @@ import colorama
 from colorama import Fore
 from flask_login import LoginManager,UserMixin,login_required,login_user
 from werkzeug.security import generate_password_hash,check_password_hash
-import mysql.connector as conn
+#import mysql.connector as conn
 #create User object for authentication
 
 sys.path.insert(0,'../Databases')
 import DBRequests
 
 db =''
-try:
-    MySQLUser = input("Enter your username for mysql server :")
-    MySQLPass = getpass.getpass("Enter your password")
-    db = conn.connect(host="localhost",user=MySQLUser,passwd = MySQLPass,database="toolset")
-except conn.ProgrammingError as e:
-    print(Fore.RED+"Error Access Denied")
-    print(Fore.RED+"Wrong username or password entered")
+# try:
+#     MySQLUser = input("Enter your username for mysql server :")
+#     MySQLPass = getpass.getpass("Enter your password")
+#     db = conn.connect(host="localhost",user=MySQLUser,passwd = MySQLPass,database="toolset")
+# except conn.ProgrammingError as e:
+#     print(Fore.RED+"Error Access Denied")
+#     print(Fore.RED+"Wrong username or password entered")
 
 class User(UserMixin):
     def __init__(self,vals):

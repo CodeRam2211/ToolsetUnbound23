@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/Landing/homepage.css">
-    <link rel="stylesheet" href="./Styles/all.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'Styles/Landing/homepage.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename ='Styles/all.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'Styles/navbar.css')}}">
     <title>Create Account</title>
 </head>
 <body class="main-content">
@@ -16,7 +17,7 @@
         <div class="login">
             <div class="login-box">
                 <h1>Sign Up</h1>
-                <form class="login-form">
+                <form class="login-form" method="POST" action="/signupSend">
                     <input type="text" name="" id="" class="name log-input formitem" placeholder="Name">
                     <input type="text" name="" id="" class="username log-input formitem" placeholder="Username">
                     <input type="password" name="" id="" class="pass log-input formitem" placeholder="Password">
