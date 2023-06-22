@@ -6,8 +6,9 @@
 }
 
 body{
-    background: rgb(163,63,13);
-    background: linear-gradient(135deg, rgba(163,63,13,1) 40%, #0BB3A7 100%);
+    background-color: rgb(0, 24, 31);
+    // background: rgb(163,63,13);
+    // background: linear-gradient(135deg, rgba(163,63,13,1) 40%, #0BB3A7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +19,7 @@ body{
         width: 100%;
         justify-content: space-between;
         .info{
-            color: white;
+            color:#00CFE5;
             width: 70%;
             height: 100vh;
         }
@@ -76,8 +77,8 @@ body{
                         }
                         .log-btn:hover{
                             cursor: pointer;
-                            background-color: black;
-                            color: white;
+                            background-color: #FF8000;
+                            color: black;
                             transition: 70ms ease-in-out;
                         }
                     }

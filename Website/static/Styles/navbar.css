@@ -1,6 +1,9 @@
 
 
 body .navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
     color:white ;
     background-color: rgba(0, 0, 0, 0.286);
     /* background: rgb(85,34,87);
@@ -15,12 +18,14 @@ background: linear-gradient(133deg, rgba(85,34,87,1) 0%, rgba(153,46,158,1) 54%,
   }
   body .navbar .logo:hover {
     cursor: pointer;
+    color: #FF8000;
   }
   body .navbar .sign-out {
     margin: 1vh 25px;
     font-size: 1.5rem;
   }
   body .navbar .sign-out:hover {
+    color: #FF8000;
     cursor: pointer;
     margin: 1vh 25px;
     font-size: 1.5rem;
@@ -41,11 +46,11 @@ background: linear-gradient(133deg, rgba(85,34,87,1) 0%, rgba(153,46,158,1) 54%,
   }
   body .navbar .tabs .nav-btn:hover {
     cursor: pointer;
+    color: #FF8000;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.286);
     padding: 0 25px;
     height: 100%;
     transition: 70ms ease-in-out;

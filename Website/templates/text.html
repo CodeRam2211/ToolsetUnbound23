@@ -31,18 +31,26 @@
             <div class="upload-txt">
                 Upload File
             </div>
-            <input type="file">
-            <button  class="upload">Upload</button>
+            <div class="uuu">
+                <input type="file" id="file" accept="text/*">
+                <label for="file">Choose a file</label>
+            </div>
+            <button  class="upload">Compress</button>
 
         </div>
-        <div class="comp-dis">
+        <div class="comp-dis hidden">
             <p>Compressed File</p>
-            <div class="name">File.txt</div>
-            <div class="percent">50% lesser</div><div class="down-btn">
-            <button class="dbtn">Download</button></div>
+            <div class="naper">
+                <div class="name">File.txt</div>
+                <div class="percent">50% lesser</div>
+                <div class="down-btn">
+                    <button class="dbtn">Download</button></div>
+                </div>
+                <button id="comp-again">Compress Another</button>
+            </div>
         </div>
     </div>
 </body>
-<script src="{{url_for('static', filename = 'Scripts/r2.js')}}"></script>
+<script src="{{url_for('static', filename = 'Scripts/compresspage.js')}}"></script>
 
 </html>

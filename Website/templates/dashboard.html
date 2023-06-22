@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename = 'Styles/Dashboard/dashboard.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename = 'Styles/all.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename = 'Styles/navbar.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static',filename = 'Styles/navbar.css')}}"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <title>Homepage</title>
 </head>
 <body>
@@ -28,10 +28,10 @@
             <h1>Welcome back, <span>User</span></h1>
         </div>
         <div class="conv-options">
-            <div class="text c-btn">Text</div>
-            <div class="image c-btn">Image</div>
-            <div class="audio c-btn">Audio</div>
-            <div class="video c-btn">Video</div>
+            <div class="text c-btn"><i class="fa fa-align-justify"></i><div class="cont">Text</div></div>
+            <div class="image c-btn"><i class="fa fa-image"></i><div class="cont">Image</div></div>
+            <div class="audio c-btn"><i class="fa fa-headphones"></i><div class="cont">Audio</div></div>
+            <div class="video c-btn"><i class="fa fa-play"></i><div class="cont">Video  </div></div>
         </div>
     </div>
 </body>
