@@ -1,4 +1,4 @@
-#import mysql.connector as conn
+import mysql.connector as conn
 #mycon=conn.connect()
 #cur.execute()
 def search_username(x,mycon):
