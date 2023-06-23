@@ -44,6 +44,9 @@ body .content .login .login-box {
   justify-content: center;
   align-items: center;
 }
+body .content .login .login-box #message-bad {
+  color: red;
+}
 body .content .login .login-box h1 {
   margin-bottom: 30px;
   color: white;

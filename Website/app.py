@@ -45,7 +45,7 @@ def load_user(user_id):
     #if id not in users
     return user
 
-@app.route('/')#home page containing login option
+@app.route('/',)#home page containing login option
 def index():
     return render_template("index.html")
 
@@ -88,7 +88,7 @@ def login():
         flash('Login Successful')
         login_user(user)
         return redirect('/dashboard')
-    return redirect('/')
+    return render_template(template_name_or_list="index.html", data = "Invalid Credentials", d2="")
     
 if __name__ == '__main__':
     app.run(debug = True,host="0.0.0.0")
