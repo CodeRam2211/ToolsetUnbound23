@@ -1,0 +1,9 @@
+Open an SSH client.
+
+Locate your private key file. The key used to launch this instance is ToolsetUnboundAccess.pem
+
+Run this command, if necessary, to ensure your key is not publicly viewable.
+ chmod 400 ToolsetUnboundAccess.pem
+
+Connect to your instance using its Public DNS:
+ ec2-13-234-20-89.ap-south-1.compute.amazonaws.com

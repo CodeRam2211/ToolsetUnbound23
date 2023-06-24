@@ -1,0 +1,13 @@
+ <div class="login hidden" id="signup" >
+            <div class="login-box">
+                <h1>Sign Up</h1>
+                <form class="login-form">
+                    <input type="text" name="" id="nemail" class="name log-input formitem" placeholder="Email">
+                    <input type="text" name="" id="nuser" class="newusername log-input formitem" placeholder="Username">
+                    <input type="password" name="" id="npas" class="newpass log-input formitem" placeholder="Password">
+                    <div class="lbtns">
+                        <input type="submit" class="sub-btn su-btn formitem log-btn" value="Create Account">
+                    </div>
+                </form>
+            </div>
+        </div>
