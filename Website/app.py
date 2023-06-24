@@ -3,7 +3,7 @@ import sys
 import getpass
 import colorama
 from colorama import Fore
-from flask_login import LoginManager,UserMixin,login_required,login_user
+from flask_login import LoginManager,UserMixin,login_required,login_user,logout_user
 from werkzeug.security import generate_password_hash,check_password_hash
 import mysql.connector as conn
 #create User object for authentication
@@ -31,14 +31,28 @@ class User(UserMixin):
         return 1
     def check_password(self,password):
         return check_password_hash(self.password_hash,password)
-
-
-user = User({'id':1,'username':'user','password':'password'})
+user = User({'id':'1','password':'password','username':'user'})
 app = Flask(__name__)
 app.secret_key = 'fri  lf oeijgrowa j' #change this key and set it t oa secret on used to prevent cookie tampering
 
 login_manager = LoginManager() #flask_login object to authenticate everything
 login_manager.init_app(app)
+
+@app.route('/login',methods = ['POST'])
+def login():
+    #getting usernames and passwords of the user
+    form = {'username': request.form.get('username'),'password':request.form.get('password')}
+    print(form['username'])
+    idMatch = DBRequests.search_username(form['username'],db)
+    if(idMatch == None):
+        flash("Error! Wrong Credentials entered")
+        return render_template(template_name_or_list="index.html", data = "Invalid Credentials", d2="")
+    user = User({'id':idMatch[0][0],'username':idMatch[0][1],'password':idMatch[0][2]})
+    if(user.check_password(form['password'])):
+        flash('Login Successful')
+        login_user(user)
+        return redirect('/dashboard')
+    return render_template(template_name_or_list="index.html", data = "Invalid Credentials", d2="")
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -71,24 +85,19 @@ def signUpLoad():
 def signUp():
     print("a")
     form = {'email':request.form.get('nemail'),'password':request.form.get('npas'),'username':request.form.get('nuser')}
+    print(form['email'])
     if(DBRequests.insert(form['username'],form['password'],form['email'],db) == 1):
         print("signed up successfully")
     else:
         print(Fore.RED+"encountered some error")
     return redirect('/')
 
+@app.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    return redirect('/')
 
-
-@app.route('/login',methods = ['POST'])
-def login():
-    #getting usernames and passwords of the user
-    form = {'username': request.form.get('username'),'password':request.form.get('password')}
-    print(form['username'])
-    if(user.check_password(form['password'])):
-        flash('Login Successful')
-        login_user(user)
-        return redirect('/dashboard')
-    return render_template(template_name_or_list="index.html", data = "Invalid Credentials", d2="")
     
 if __name__ == '__main__':
     app.run(debug = True,host="0.0.0.0")
