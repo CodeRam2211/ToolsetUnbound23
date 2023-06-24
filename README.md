@@ -8,7 +8,7 @@ Python dependencies can be installed by using the pip command to install from re
 ## Installing and creating the tables for Mysql
 The MySQL server must be installed on your computer by following this [website](https://www.javatpoint.com/how-to-install-mysql).  
 Create the MySQL table by using the following command in the MYSQL command line.  
-  '''source path-to-cloned-repo\Databasees\UserTableCreate.sql'''  
+  ```source path-to-cloned-repo\Databasees\UserTableCreate.sql```
 
 # Instructions for Executing Files
 The following instruction gives you a basic overview of the algorithms and software used to create the website and the means to run them.
