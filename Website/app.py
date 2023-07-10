@@ -51,7 +51,7 @@ def login():
     if(user.check_password(form['password'])):
         flash('Login Successful')
         login_user(user)
-        return redirect('/dashboard')
+        return redirect(('/dashboard/'+str(form['username'])))
     return render_template(template_name_or_list="index.html", data = "Invalid Credentials", d2="")
 
 @login_manager.user_loader
@@ -69,15 +69,15 @@ def index():
 def compress():
     return render_template('text.html')
 
-@app.route('/dashboard')
+@app.route('/dashboard/<username>')
 @login_required
-def dashboard() :
-    return render_template('dashboard.html')
+def dashboard(username) :
+    return render_template('dashboard.html', user = username)
 
-@app.route('/files')
+@app.route('/files/<username>')
 @login_required
-def files():
-    return render_template('files.html')
+def files(username):
+    return render_template('files.html',fileList = [[1,2,3,4,5]])
 @app.route('/signup')
 def signUpLoad():
     return render_template('signup.html')
@@ -91,11 +91,15 @@ def signUp():
     else:
         print(Fore.RED+"encountered some error")
     return redirect('/')
-
+# @app.route('/text',methods = ['POST'])
+# @login_required
+# def textCompres():
+    
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
+
     return redirect('/')
 
     

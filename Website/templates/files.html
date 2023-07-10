@@ -60,13 +60,15 @@
                     <td class="rat">0%</td>
                     <td class="link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Download</a></td>
                 </tr>
+                {%for i in fileList%}
                 <tr>
-                    <td class="sr-no">2</td>
-                    <td class="fame">file.txt</td>
-                    <td class="si">1gb</td>
-                    <td class="rat">0%</td>
-                    <td class="link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Download</a></td>
+                    <td class="sr-no">{{i[0]}}</td>
+                    <td class="fame">{{i[1]}}</td>
+                    <td class="si">{{i[2]}}</td>
+                    <td class="rat">{{i[3]}}</td>
+                    <td class="link">{{i[4]}}</td>
                 </tr>
+                {%endfor%}
                 </tbody>
             </table>
         </div>

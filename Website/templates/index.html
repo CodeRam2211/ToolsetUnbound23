@@ -16,32 +16,22 @@
         </div>
         <div class="login" id="login">
             <div class="login-box">
-                <p id="message-bad">{{data}}</p>
-                <p id="message-good">{{d2}}</p>
                 <h1>Login</h1>
                 <form class="login-form" method= "POST" action = "/login">
                     <input type="text" name="username" id="username" class="username log-input formitem" placeholder="Username">
                     <input type="password" name="password" id="" class="pass log-input formitem" placeholder="Password">
                     <div class="lbtns">
                         <input type="submit" class="sub-btn in-btn log-btn formitem" value="Login">
-                        <input type="button" value="Sign Up" class="sign-btn log-btn formitem">
+                    </form>
+                    <form class="sign" action="/signup">
+                        <input type="submit" value="Sign Up" class ="sub-btn in-btn log-btn formitem">
+                    </form>
                     </div>
-                </form>
+                
+                
             </div>
         </div>
-        <div class="login hidden" id="signup">
-            <div class="login-box">
-                <h1>Sign Up</h1>
-                <form class="login-form">
-                    <input type="text" name="" id="pname" class="name log-input formitem" placeholder="Name">
-                    <input type="text" name="" id="nus" class="newusername log-input formitem" placeholder="Username">
-                    <input type="password" name="" id="npas" class="newpass log-input formitem" placeholder="Password">
-                    <div class="lbtns">
-                        <input type="button" class="sub-btn su-btn formitem log-btn" value="Create Account">
-                    </div>
-                </form>
-            </div>
-        </div>
+       
     </div>
 </body>
 <script src="{{url_for('static',filename = 'Scripts/index.js')}}"></script>
