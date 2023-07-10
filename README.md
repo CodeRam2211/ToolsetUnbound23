@@ -1,5 +1,6 @@
 # ToolsetUnbound23
 These are the source files for the website under development which aims to provide users with the ability to compress, store, and access files present in cloud
+The Report files are present in the Reports directory
 # Installation Instructions  
 ## Installing Python Dependencies
 Python dependencies can be installed by using the pip command to install from requirements.txt. Ideally using a virtual environment while doing so  
@@ -27,4 +28,7 @@ To run the text compression algorithm please run the following command in the Co
 The audio compression works by a lossy algorithm wherein we reduce the audio quality by cutting off certain frequencies, that are not sensitive to the human ear, and also decrease the rate at which the frequencies are read by the computer (sampling rate).  
 The audio compression can be run by using the following command   
 ```python audioCompress.py``` 
+### Image Compression Algorithm
+The image compression algorithm works by the qoi lossless compression algorithm. It converts a raw image file to qoi format. Which is 50 - 60 times faster than png
 
+```ts-node compression.ts```
