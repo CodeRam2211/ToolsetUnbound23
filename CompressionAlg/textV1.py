@@ -177,3 +177,7 @@ filepath = input("enter file location :")
 myfileobj = HuffmanCoding(filepath)
 
 myfileobj.compress()
+
+val = int(input("Decompress (1 or 0) ??"))
+if(val == 1):
+	myfileobj.decompress(filepath)
